@@ -14,3 +14,7 @@ struct CustomColor {
 struct CustomFont {
     static let SizeDefault: CGFloat = 15.0
 }
+
+struct MetricsGlobal {
+    static let margin: CGFloat = 30.0
+}

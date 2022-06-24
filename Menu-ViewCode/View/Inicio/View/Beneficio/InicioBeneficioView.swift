@@ -107,7 +107,7 @@ class InicioBeneficioView: BaseView {
             
             self.stackTotal.topAnchor.constraint(equalTo: self.collectionView.bottomAnchor, constant: Matrics.space),
             self.stackTotal.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            self.stackTotal.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -Matrics.space),
+            self.stackTotal.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -MetricsGlobal.margin),
             self.stackTotal.heightAnchor.constraint(equalToConstant: Matrics.labelHeight)
         ])
     }

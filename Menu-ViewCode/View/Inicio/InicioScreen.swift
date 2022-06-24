@@ -10,7 +10,6 @@ import UIKit
 class InicioScreen: UIView {
 
     private struct Metrics {
-        static let margin: CGFloat = 30.0
         static let space: CGFloat = 10.0
     }
     
@@ -34,9 +33,9 @@ class InicioScreen: UIView {
     private func setupConstraint() {
         NSLayoutConstraint.activate([
             
-            self.headerView.topAnchor.constraint(equalTo: self.topAnchor, constant: Metrics.margin),
-            self.headerView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: Metrics.margin),
-            self.headerView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -Metrics.margin),
+            self.headerView.topAnchor.constraint(equalTo: self.topAnchor, constant: MetricsGlobal.margin),
+            self.headerView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: MetricsGlobal.margin),
+            self.headerView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -MetricsGlobal.margin),
             self.headerView.heightAnchor.constraint(equalToConstant: 50),
             
             self.beneficioView.topAnchor.constraint(equalTo: self.headerView.bottomAnchor, constant: Metrics.space * 2),
