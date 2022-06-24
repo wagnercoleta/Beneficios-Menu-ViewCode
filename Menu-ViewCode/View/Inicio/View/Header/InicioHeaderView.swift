@@ -18,7 +18,6 @@ class InicioHeaderView: BaseView {
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = .horizontal
         stack.distribution = .equalSpacing
-        //stack.backgroundColor = .green
         return stack
     }()
     
@@ -27,7 +26,6 @@ class InicioHeaderView: BaseView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.attributedText = self.getAttributedTextName(textWellcome: "Oi", textName: "Wagner")
         label.numberOfLines = 1
-        //label.backgroundColor = .red
         return label
     }()
     
@@ -35,7 +33,6 @@ class InicioHeaderView: BaseView {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         image.image = UIImage(systemName: "eye")
-        //image.backgroundColor = .blue
         return image
     }()
 

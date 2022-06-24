@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		DD6AC5322866071800698506 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6AC5312866071800698506 /* Constants.swift */; };
 		DD6AC53428660DC700698506 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6AC53328660DC700698506 /* BaseView.swift */; };
+		DD6AC53A28662BF500698506 /* BeneficioItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6AC53928662BF500698506 /* BeneficioItemView.swift */; };
+		DD6AC53C286631D600698506 /* BeneficioCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6AC53B286631D600698506 /* BeneficioCollectionViewCell.swift */; };
+		DD6AC53E286656B100698506 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6AC53D286656B100698506 /* Helpers.swift */; };
 		DDBFDF7E2864EA0200FD4451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFDF7D2864EA0200FD4451 /* AppDelegate.swift */; };
 		DDBFDF802864EA0200FD4451 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFDF7F2864EA0200FD4451 /* SceneDelegate.swift */; };
 		DDBFDF872864EA0400FD4451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBFDF862864EA0400FD4451 /* Assets.xcassets */; };
@@ -27,6 +30,9 @@
 /* Begin PBXFileReference section */
 		DD6AC5312866071800698506 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DD6AC53328660DC700698506 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		DD6AC53928662BF500698506 /* BeneficioItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeneficioItemView.swift; sourceTree = "<group>"; };
+		DD6AC53B286631D600698506 /* BeneficioCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeneficioCollectionViewCell.swift; sourceTree = "<group>"; };
+		DD6AC53D286656B100698506 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		DDBFDF7A2864EA0200FD4451 /* Menu-ViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Menu-ViewCode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBFDF7D2864EA0200FD4451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDBFDF7F2864EA0200FD4451 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +61,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD6AC53528662B5900698506 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				DDBFDFA02865069800FD4451 /* InicioHeaderView.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		DD6AC53628662B6700698506 /* Beneficio */ = {
+			isa = PBXGroup;
+			children = (
+				DD6AC53928662BF500698506 /* BeneficioItemView.swift */,
+				DD6AC53B286631D600698506 /* BeneficioCollectionViewCell.swift */,
+				DDBFDFA2286506DA00FD4451 /* InicioBeneficioView.swift */,
+			);
+			path = Beneficio;
+			sourceTree = "<group>";
+		};
+		DD6AC53728662B7000698506 /* Acao */ = {
+			isa = PBXGroup;
+			children = (
+				DDBFDFA4286506F900FD4451 /* InicioAcaoView.swift */,
+			);
+			path = Acao;
+			sourceTree = "<group>";
+		};
+		DD6AC53828662B7A00698506 /* Transacao */ = {
+			isa = PBXGroup;
+			children = (
+				DDBFDFA62865072700FD4451 /* InicioTransacaoView.swift */,
+			);
+			path = Transacao;
+			sourceTree = "<group>";
+		};
 		DDBFDF712864EA0200FD4451 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +157,7 @@
 				DD6AC53328660DC700698506 /* BaseView.swift */,
 				DDBFDF972864FDE800FD4451 /* BaseViewController.swift */,
 				DD6AC5312866071800698506 /* Constants.swift */,
+				DD6AC53D286656B100698506 /* Helpers.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -142,10 +183,10 @@
 		DDBFDF9F2865066B00FD4451 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DDBFDFA02865069800FD4451 /* InicioHeaderView.swift */,
-				DDBFDFA2286506DA00FD4451 /* InicioBeneficioView.swift */,
-				DDBFDFA4286506F900FD4451 /* InicioAcaoView.swift */,
-				DDBFDFA62865072700FD4451 /* InicioTransacaoView.swift */,
+				DD6AC53528662B5900698506 /* Header */,
+				DD6AC53628662B6700698506 /* Beneficio */,
+				DD6AC53728662B7000698506 /* Acao */,
+				DD6AC53828662B7A00698506 /* Transacao */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -223,11 +264,14 @@
 				DD6AC53428660DC700698506 /* BaseView.swift in Sources */,
 				DDBFDFA92865075800FD4451 /* InicioScreen.swift in Sources */,
 				DDBFDF7E2864EA0200FD4451 /* AppDelegate.swift in Sources */,
+				DD6AC53A28662BF500698506 /* BeneficioItemView.swift in Sources */,
 				DDBFDFA72865072700FD4451 /* InicioTransacaoView.swift in Sources */,
 				DDBFDF982864FDE800FD4451 /* BaseViewController.swift in Sources */,
 				DDBFDFA5286506F900FD4451 /* InicioAcaoView.swift in Sources */,
+				DD6AC53C286631D600698506 /* BeneficioCollectionViewCell.swift in Sources */,
 				DDBFDF952864EC0900FD4451 /* MenuTabBarController.swift in Sources */,
 				DDBFDFA12865069800FD4451 /* InicioHeaderView.swift in Sources */,
+				DD6AC53E286656B100698506 /* Helpers.swift in Sources */,
 				DDBFDF9B2865020100FD4451 /* InicioViewController.swift in Sources */,
 				DDBFDFA3286506DA00FD4451 /* InicioBeneficioView.swift in Sources */,
 				DDBFDF802864EA0200FD4451 /* SceneDelegate.swift in Sources */,

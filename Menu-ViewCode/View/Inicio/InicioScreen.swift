@@ -9,8 +9,9 @@ import UIKit
 
 class InicioScreen: UIView {
 
-    private struct Matrics {
+    private struct Metrics {
         static let margin: CGFloat = 30.0
+        static let space: CGFloat = 10.0
     }
     
     private lazy var headerView: InicioHeaderView = {
@@ -33,9 +34,17 @@ class InicioScreen: UIView {
     private func setupConstraint() {
         NSLayoutConstraint.activate([
             
-            self.headerView.topAnchor.constraint(equalTo: self.topAnchor, constant: Matrics.margin),
-            self.headerView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: Matrics.margin),
-            self.headerView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -Matrics.margin),
+            self.headerView.topAnchor.constraint(equalTo: self.topAnchor, constant: Metrics.margin),
+            self.headerView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: Metrics.margin),
+            self.headerView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -Metrics.margin),
+            self.headerView.heightAnchor.constraint(equalToConstant: 50),
+            
+            self.beneficioView.topAnchor.constraint(equalTo: self.headerView.bottomAnchor, constant: Metrics.space * 2),
+            self.beneficioView.leadingAnchor.constraint(equalTo: self.headerView.leadingAnchor),
+            self.beneficioView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            self.beneficioView.heightAnchor.constraint(equalToConstant: 300),
+            
+            
             
         ])
     }
