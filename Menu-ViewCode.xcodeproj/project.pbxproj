@@ -7,21 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD6AC5322866071800698506 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6AC5312866071800698506 /* Constants.swift */; };
+		DD6AC53428660DC700698506 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6AC53328660DC700698506 /* BaseView.swift */; };
 		DDBFDF7E2864EA0200FD4451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFDF7D2864EA0200FD4451 /* AppDelegate.swift */; };
 		DDBFDF802864EA0200FD4451 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFDF7F2864EA0200FD4451 /* SceneDelegate.swift */; };
-		DDBFDF822864EA0200FD4451 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFDF812864EA0200FD4451 /* ViewController.swift */; };
 		DDBFDF872864EA0400FD4451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBFDF862864EA0400FD4451 /* Assets.xcassets */; };
 		DDBFDF8A2864EA0400FD4451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDBFDF882864EA0400FD4451 /* LaunchScreen.storyboard */; };
+		DDBFDF952864EC0900FD4451 /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFDF942864EC0900FD4451 /* MenuTabBarController.swift */; };
+		DDBFDF982864FDE800FD4451 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFDF972864FDE800FD4451 /* BaseViewController.swift */; };
+		DDBFDF9B2865020100FD4451 /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFDF9A2865020100FD4451 /* InicioViewController.swift */; };
+		DDBFDF9E2865026000FD4451 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFDF9D2865026000FD4451 /* PerfilViewController.swift */; };
+		DDBFDFA12865069800FD4451 /* InicioHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFDFA02865069800FD4451 /* InicioHeaderView.swift */; };
+		DDBFDFA3286506DA00FD4451 /* InicioBeneficioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFDFA2286506DA00FD4451 /* InicioBeneficioView.swift */; };
+		DDBFDFA5286506F900FD4451 /* InicioAcaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFDFA4286506F900FD4451 /* InicioAcaoView.swift */; };
+		DDBFDFA72865072700FD4451 /* InicioTransacaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFDFA62865072700FD4451 /* InicioTransacaoView.swift */; };
+		DDBFDFA92865075800FD4451 /* InicioScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFDFA82865075800FD4451 /* InicioScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD6AC5312866071800698506 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DD6AC53328660DC700698506 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		DDBFDF7A2864EA0200FD4451 /* Menu-ViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Menu-ViewCode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBFDF7D2864EA0200FD4451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDBFDF7F2864EA0200FD4451 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DDBFDF812864EA0200FD4451 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DDBFDF862864EA0400FD4451 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDBFDF892864EA0400FD4451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDBFDF8B2864EA0400FD4451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDBFDF942864EC0900FD4451 /* MenuTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarController.swift; sourceTree = "<group>"; };
+		DDBFDF972864FDE800FD4451 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DDBFDF9A2865020100FD4451 /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
+		DDBFDF9D2865026000FD4451 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		DDBFDFA02865069800FD4451 /* InicioHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioHeaderView.swift; sourceTree = "<group>"; };
+		DDBFDFA2286506DA00FD4451 /* InicioBeneficioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioBeneficioView.swift; sourceTree = "<group>"; };
+		DDBFDFA4286506F900FD4451 /* InicioAcaoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioAcaoView.swift; sourceTree = "<group>"; };
+		DDBFDFA62865072700FD4451 /* InicioTransacaoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioTransacaoView.swift; sourceTree = "<group>"; };
+		DDBFDFA82865075800FD4451 /* InicioScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +103,49 @@
 		DDBFDF932864EAE300FD4451 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DDBFDF812864EA0200FD4451 /* ViewController.swift */,
+				DDBFDF962864FDC200FD4451 /* Base */,
+				DDBFDF99286501D600FD4451 /* Inicio */,
+				DDBFDF9C2865024F00FD4451 /* Perfil */,
+				DDBFDF942864EC0900FD4451 /* MenuTabBarController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDBFDF962864FDC200FD4451 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DD6AC53328660DC700698506 /* BaseView.swift */,
+				DDBFDF972864FDE800FD4451 /* BaseViewController.swift */,
+				DD6AC5312866071800698506 /* Constants.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DDBFDF99286501D600FD4451 /* Inicio */ = {
+			isa = PBXGroup;
+			children = (
+				DDBFDF9F2865066B00FD4451 /* View */,
+				DDBFDFA82865075800FD4451 /* InicioScreen.swift */,
+				DDBFDF9A2865020100FD4451 /* InicioViewController.swift */,
+			);
+			path = Inicio;
+			sourceTree = "<group>";
+		};
+		DDBFDF9C2865024F00FD4451 /* Perfil */ = {
+			isa = PBXGroup;
+			children = (
+				DDBFDF9D2865026000FD4451 /* PerfilViewController.swift */,
+			);
+			path = Perfil;
+			sourceTree = "<group>";
+		};
+		DDBFDF9F2865066B00FD4451 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDBFDFA02865069800FD4451 /* InicioHeaderView.swift */,
+				DDBFDFA2286506DA00FD4451 /* InicioBeneficioView.swift */,
+				DDBFDFA4286506F900FD4451 /* InicioAcaoView.swift */,
+				DDBFDFA62865072700FD4451 /* InicioTransacaoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,9 +219,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDBFDF822864EA0200FD4451 /* ViewController.swift in Sources */,
+				DDBFDF9E2865026000FD4451 /* PerfilViewController.swift in Sources */,
+				DD6AC53428660DC700698506 /* BaseView.swift in Sources */,
+				DDBFDFA92865075800FD4451 /* InicioScreen.swift in Sources */,
 				DDBFDF7E2864EA0200FD4451 /* AppDelegate.swift in Sources */,
+				DDBFDFA72865072700FD4451 /* InicioTransacaoView.swift in Sources */,
+				DDBFDF982864FDE800FD4451 /* BaseViewController.swift in Sources */,
+				DDBFDFA5286506F900FD4451 /* InicioAcaoView.swift in Sources */,
+				DDBFDF952864EC0900FD4451 /* MenuTabBarController.swift in Sources */,
+				DDBFDFA12865069800FD4451 /* InicioHeaderView.swift in Sources */,
+				DDBFDF9B2865020100FD4451 /* InicioViewController.swift in Sources */,
+				DDBFDFA3286506DA00FD4451 /* InicioBeneficioView.swift in Sources */,
 				DDBFDF802864EA0200FD4451 /* SceneDelegate.swift in Sources */,
+				DD6AC5322866071800698506 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
