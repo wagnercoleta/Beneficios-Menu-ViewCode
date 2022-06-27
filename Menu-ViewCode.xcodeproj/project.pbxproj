@@ -13,6 +13,9 @@
 		DD6AC53C286631D600698506 /* BeneficioCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6AC53B286631D600698506 /* BeneficioCollectionViewCell.swift */; };
 		DD6AC53E286656B100698506 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6AC53D286656B100698506 /* Helpers.swift */; };
 		DD709DD12869E9DD006627EB /* AcaoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD709DD02869E9DD006627EB /* AcaoItemView.swift */; };
+		DD709DD32869FF61006627EB /* TransacaoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD709DD22869FF61006627EB /* TransacaoItemView.swift */; };
+		DD709DD5286A406D006627EB /* TransacaoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD709DD4286A406D006627EB /* TransacaoCollectionViewCell.swift */; };
+		DD709DD8286A40F7006627EB /* TransacaoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD709DD7286A40F6006627EB /* TransacaoModel.swift */; };
 		DDBFDF7E2864EA0200FD4451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFDF7D2864EA0200FD4451 /* AppDelegate.swift */; };
 		DDBFDF802864EA0200FD4451 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFDF7F2864EA0200FD4451 /* SceneDelegate.swift */; };
 		DDBFDF872864EA0400FD4451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBFDF862864EA0400FD4451 /* Assets.xcassets */; };
@@ -35,6 +38,9 @@
 		DD6AC53B286631D600698506 /* BeneficioCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeneficioCollectionViewCell.swift; sourceTree = "<group>"; };
 		DD6AC53D286656B100698506 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		DD709DD02869E9DD006627EB /* AcaoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcaoItemView.swift; sourceTree = "<group>"; };
+		DD709DD22869FF61006627EB /* TransacaoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransacaoItemView.swift; sourceTree = "<group>"; };
+		DD709DD4286A406D006627EB /* TransacaoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransacaoCollectionViewCell.swift; sourceTree = "<group>"; };
+		DD709DD7286A40F6006627EB /* TransacaoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransacaoModel.swift; sourceTree = "<group>"; };
 		DDBFDF7A2864EA0200FD4451 /* Menu-ViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Menu-ViewCode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBFDF7D2864EA0200FD4451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDBFDF7F2864EA0200FD4451 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,9 +99,19 @@
 		DD6AC53828662B7A00698506 /* Transacao */ = {
 			isa = PBXGroup;
 			children = (
+				DD709DD22869FF61006627EB /* TransacaoItemView.swift */,
+				DD709DD4286A406D006627EB /* TransacaoCollectionViewCell.swift */,
 				DDBFDFA62865072700FD4451 /* InicioTransacaoView.swift */,
 			);
 			path = Transacao;
+			sourceTree = "<group>";
+		};
+		DD709DD6286A40E3006627EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD709DD7286A40F6006627EB /* TransacaoModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DDBFDF712864EA0200FD4451 = {
@@ -168,6 +184,7 @@
 		DDBFDF99286501D600FD4451 /* Inicio */ = {
 			isa = PBXGroup;
 			children = (
+				DD709DD6286A40E3006627EB /* Model */,
 				DDBFDF9F2865066B00FD4451 /* View */,
 				DDBFDFA82865075800FD4451 /* InicioScreen.swift */,
 				DDBFDF9A2865020100FD4451 /* InicioViewController.swift */,
@@ -265,7 +282,9 @@
 			files = (
 				DDBFDF9E2865026000FD4451 /* PerfilViewController.swift in Sources */,
 				DD6AC53428660DC700698506 /* BaseView.swift in Sources */,
+				DD709DD32869FF61006627EB /* TransacaoItemView.swift in Sources */,
 				DD709DD12869E9DD006627EB /* AcaoItemView.swift in Sources */,
+				DD709DD8286A40F7006627EB /* TransacaoModel.swift in Sources */,
 				DDBFDFA92865075800FD4451 /* InicioScreen.swift in Sources */,
 				DDBFDF7E2864EA0200FD4451 /* AppDelegate.swift in Sources */,
 				DD6AC53A28662BF500698506 /* BeneficioItemView.swift in Sources */,
@@ -276,6 +295,7 @@
 				DDBFDF952864EC0900FD4451 /* MenuTabBarController.swift in Sources */,
 				DDBFDFA12865069800FD4451 /* InicioHeaderView.swift in Sources */,
 				DD6AC53E286656B100698506 /* Helpers.swift in Sources */,
+				DD709DD5286A406D006627EB /* TransacaoCollectionViewCell.swift in Sources */,
 				DDBFDF9B2865020100FD4451 /* InicioViewController.swift in Sources */,
 				DDBFDFA3286506DA00FD4451 /* InicioBeneficioView.swift in Sources */,
 				DDBFDF802864EA0200FD4451 /* SceneDelegate.swift in Sources */,

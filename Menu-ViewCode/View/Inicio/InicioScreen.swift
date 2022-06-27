@@ -30,11 +30,19 @@ class InicioScreen: UIView {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    
+    private lazy var transacaoView: InicioTransacaoView = {
+        let view = InicioTransacaoView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        //view.backgroundColor = .lightGray
+        return view
+    }()
 
     private func addElemented() {
         self.addSubview(self.headerView)
         self.addSubview(self.beneficioView)
         self.addSubview(self.acaoView)
+        self.addSubview(self.transacaoView)
     }
     
     private func setupConstraint() {
@@ -53,7 +61,12 @@ class InicioScreen: UIView {
             self.acaoView.topAnchor.constraint(equalTo: self.beneficioView.bottomAnchor, constant: Metrics.space * 2),
             self.acaoView.leadingAnchor.constraint(equalTo: self.headerView.leadingAnchor),
             self.acaoView.trailingAnchor.constraint(equalTo: self.headerView.trailingAnchor),
-            self.acaoView.heightAnchor.constraint(equalToConstant: 120)
+            self.acaoView.heightAnchor.constraint(equalToConstant: 160),
+            
+            self.transacaoView.topAnchor.constraint(equalTo: self.acaoView.bottomAnchor, constant: Metrics.space * 2),
+            self.transacaoView.leadingAnchor.constraint(equalTo: self.headerView.leadingAnchor),
+            self.transacaoView.trailingAnchor.constraint(equalTo: self.headerView.trailingAnchor),
+            self.transacaoView.heightAnchor.constraint(equalToConstant: 190)
         ])
     }
     

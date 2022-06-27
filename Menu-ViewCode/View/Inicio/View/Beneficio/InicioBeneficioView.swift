@@ -22,14 +22,14 @@ class InicioBeneficioView: BaseView {
     }
     
     private var beneficios: [BeneficioItem] = [
-        BeneficioItem(imageName: "smiley", value: 500, description: "REFEIÇÃO", backgroudColor: .systemRed),
-        BeneficioItem(imageName: "cart", value: 1200, description: "ALIMENTAÇÃO", backgroudColor: .systemGreen),
-        BeneficioItem(imageName: "desktopcomputer", value: 100.40, description: "HOME-OFFICE", backgroudColor: .systemBlue),
-        BeneficioItem(imageName: "hammer", value: 300, description: "CONSTRUÇÃO", backgroudColor: .systemPurple),
-        BeneficioItem(imageName: "creditcard", value: 0, description: "CRÉDITO", backgroudColor: .systemTeal),
-        BeneficioItem(imageName: "car", value: 0, description: "COMBUSTÍVEL", backgroudColor: .systemYellow),
-        BeneficioItem(imageName: "airplane", value: 0, description: "VIAGEM", backgroudColor: .systemIndigo),
-        BeneficioItem(imageName: "studentdesk", value: 0, description: "CURSO", backgroudColor: .systemGray)
+        BeneficioItem(imageName: BeneficioImageEnum.Refeicao.text, value: 500, description: "REFEIÇÃO", backgroudColor: .systemRed),
+        BeneficioItem(imageName: BeneficioImageEnum.Alimentacao.text, value: 1200, description: "ALIMENTAÇÃO", backgroudColor: .systemGreen),
+        BeneficioItem(imageName: BeneficioImageEnum.HomeOffice.text, value: 100.40, description: "HOME-OFFICE", backgroudColor: .systemBlue),
+        BeneficioItem(imageName: BeneficioImageEnum.Construcao.text, value: 300, description: "CONSTRUÇÃO", backgroudColor: .systemPurple),
+        BeneficioItem(imageName: BeneficioImageEnum.Credito.text, value: 0, description: "CRÉDITO", backgroudColor: .systemTeal),
+        BeneficioItem(imageName: BeneficioImageEnum.Combustivel.text, value: 0, description: "COMBUSTÍVEL", backgroudColor: .systemYellow),
+        BeneficioItem(imageName: BeneficioImageEnum.Viagem.text, value: 0, description: "VIAGEM", backgroudColor: .systemIndigo),
+        BeneficioItem(imageName: BeneficioImageEnum.Curso.text, value: 0, description: "CURSO", backgroudColor: .systemGray)
     ]
     
     private lazy var labelBeneficio: UILabel = {
