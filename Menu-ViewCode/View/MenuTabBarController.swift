@@ -18,8 +18,7 @@ class MenuTabBarController: UITabBarController {
         
         self.setViewControllers(
             [
-                //UINavigationController(rootViewController: BaseViewController(title: "Tela 01", backgroundColor: .blue, image: UIImage(systemName: "star"))),
-                InicioViewController(title: "Início", backgroundColor: .white, image: UIImage(systemName: "house")),
+                InicioViewController(title: "Início", backgroundColor: .white, image: UIImage(systemName: "house.fill")),
                 PerfilViewController(title: "Perfil", backgroundColor: .red, image: UIImage(systemName: "person.fill"))
             ],
             animated: false
