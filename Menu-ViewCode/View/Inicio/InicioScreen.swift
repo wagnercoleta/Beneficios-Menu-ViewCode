@@ -24,27 +24,36 @@ class InicioScreen: UIView {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    
+    private lazy var acaoView: InicioAcaoView = {
+        let view = InicioAcaoView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
 
     private func addElemented() {
         self.addSubview(self.headerView)
         self.addSubview(self.beneficioView)
+        self.addSubview(self.acaoView)
     }
     
     private func setupConstraint() {
         NSLayoutConstraint.activate([
             
-            self.headerView.topAnchor.constraint(equalTo: self.topAnchor, constant: MetricsGlobal.margin),
-            self.headerView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: MetricsGlobal.margin),
-            self.headerView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -MetricsGlobal.margin),
+            self.headerView.topAnchor.constraint(equalTo: self.topAnchor, constant: MatricsGlobal.margin),
+            self.headerView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: MatricsGlobal.margin),
+            self.headerView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -MatricsGlobal.margin),
             self.headerView.heightAnchor.constraint(equalToConstant: 50),
             
             self.beneficioView.topAnchor.constraint(equalTo: self.headerView.bottomAnchor, constant: Metrics.space * 2),
             self.beneficioView.leadingAnchor.constraint(equalTo: self.headerView.leadingAnchor),
             self.beneficioView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            self.beneficioView.heightAnchor.constraint(equalToConstant: 300),
+            self.beneficioView.heightAnchor.constraint(equalToConstant: 275),
             
-            
-            
+            self.acaoView.topAnchor.constraint(equalTo: self.beneficioView.bottomAnchor, constant: Metrics.space * 2),
+            self.acaoView.leadingAnchor.constraint(equalTo: self.headerView.leadingAnchor),
+            self.acaoView.trailingAnchor.constraint(equalTo: self.headerView.trailingAnchor),
+            self.acaoView.heightAnchor.constraint(equalToConstant: 120)
         ])
     }
     

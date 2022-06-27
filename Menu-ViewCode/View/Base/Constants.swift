@@ -15,6 +15,7 @@ struct CustomFont {
     static let SizeDefault: CGFloat = 15.0
 }
 
-struct MetricsGlobal {
+struct MatricsGlobal {
     static let margin: CGFloat = 30.0
+    static let labelHeight: CGFloat = 25.0
 }

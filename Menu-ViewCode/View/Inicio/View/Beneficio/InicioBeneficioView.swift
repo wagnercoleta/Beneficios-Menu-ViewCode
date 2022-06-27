@@ -17,7 +17,7 @@ struct BeneficioItem {
 class InicioBeneficioView: BaseView {
 
     private struct Matrics {
-        static let labelHeight: CGFloat = 25.0
+        
         static let space: CGFloat = 10.0
     }
     
@@ -98,7 +98,7 @@ class InicioBeneficioView: BaseView {
             self.labelBeneficio.topAnchor.constraint(equalTo: self.topAnchor),
             self.labelBeneficio.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             self.labelBeneficio.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            self.labelBeneficio.heightAnchor.constraint(equalToConstant: Matrics.labelHeight),
+            self.labelBeneficio.heightAnchor.constraint(equalToConstant: MatricsGlobal.labelHeight),
             
             self.collectionView.topAnchor.constraint(equalTo: self.labelBeneficio.bottomAnchor, constant: Matrics.space),
             self.collectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
@@ -107,8 +107,8 @@ class InicioBeneficioView: BaseView {
             
             self.stackTotal.topAnchor.constraint(equalTo: self.collectionView.bottomAnchor, constant: Matrics.space),
             self.stackTotal.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            self.stackTotal.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -MetricsGlobal.margin),
-            self.stackTotal.heightAnchor.constraint(equalToConstant: Matrics.labelHeight)
+            self.stackTotal.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -MatricsGlobal.margin),
+            self.stackTotal.heightAnchor.constraint(equalToConstant: MatricsGlobal.labelHeight)
         ])
     }
     

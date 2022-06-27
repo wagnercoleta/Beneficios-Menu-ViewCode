@@ -17,7 +17,7 @@ class BeneficioItemView: BaseView {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.clipsToBounds = true
-        view.layer.cornerRadius = 10
+        view.layer.cornerRadius = 20
         view.layer.borderColor = CustomColor.Main?.cgColor
         view.backgroundColor = CustomColor.Main
         return view
@@ -73,7 +73,7 @@ class BeneficioItemView: BaseView {
             self.imageView.topAnchor.constraint(equalTo: self.boxView.topAnchor, constant: Matrics.space),
             self.imageView.leadingAnchor.constraint(equalTo: self.boxView.leadingAnchor, constant: Matrics.space),
             self.imageView.widthAnchor.constraint(equalToConstant: 45),
-            self.imageView.heightAnchor.constraint(equalToConstant: 35),
+            self.imageView.heightAnchor.constraint(equalToConstant: 45),
             
             self.stack.topAnchor.constraint(equalTo: self.imageView.bottomAnchor),
             self.stack.leadingAnchor.constraint(equalTo: self.imageView.leadingAnchor),
