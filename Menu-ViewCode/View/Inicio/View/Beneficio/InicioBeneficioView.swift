@@ -7,13 +7,6 @@
 
 import UIKit
 
-struct BeneficioItem {
-    let imageName: String
-    let value: Decimal
-    let description: String
-    let backgroudColor: UIColor
-}
-
 class InicioBeneficioView: BaseView {
 
     private struct Matrics {
@@ -21,15 +14,15 @@ class InicioBeneficioView: BaseView {
         static let space: CGFloat = 10.0
     }
     
-    private var beneficios: [BeneficioItem] = [
-        BeneficioItem(imageName: BeneficioImageEnum.Refeicao.text, value: 500, description: "REFEIÇÃO", backgroudColor: .systemRed),
-        BeneficioItem(imageName: BeneficioImageEnum.Alimentacao.text, value: 1200, description: "ALIMENTAÇÃO", backgroudColor: .systemGreen),
-        BeneficioItem(imageName: BeneficioImageEnum.HomeOffice.text, value: 100.40, description: "HOME-OFFICE", backgroudColor: .systemBlue),
-        BeneficioItem(imageName: BeneficioImageEnum.Construcao.text, value: 300, description: "CONSTRUÇÃO", backgroudColor: .systemPurple),
-        BeneficioItem(imageName: BeneficioImageEnum.Credito.text, value: 0, description: "CRÉDITO", backgroudColor: .systemTeal),
-        BeneficioItem(imageName: BeneficioImageEnum.Combustivel.text, value: 0, description: "COMBUSTÍVEL", backgroudColor: .systemYellow),
-        BeneficioItem(imageName: BeneficioImageEnum.Viagem.text, value: 0, description: "VIAGEM", backgroudColor: .systemIndigo),
-        BeneficioItem(imageName: BeneficioImageEnum.Curso.text, value: 0, description: "CURSO", backgroudColor: .systemGray)
+    private var beneficios: [BeneficioModel] = [
+        BeneficioModel(imageName: BeneficioImageEnum.Refeicao.text, value: 500, description: "REFEIÇÃO", backgroudColor: .systemRed),
+        BeneficioModel(imageName: BeneficioImageEnum.Alimentacao.text, value: 1200, description: "ALIMENTAÇÃO", backgroudColor: .systemGreen),
+        BeneficioModel(imageName: BeneficioImageEnum.HomeOffice.text, value: 100.40, description: "HOME-OFFICE", backgroudColor: .systemBlue),
+        BeneficioModel(imageName: BeneficioImageEnum.Construcao.text, value: 300, description: "CONSTRUÇÃO", backgroudColor: .systemPurple),
+        BeneficioModel(imageName: BeneficioImageEnum.Credito.text, value: 0, description: "CRÉDITO", backgroudColor: .systemTeal),
+        BeneficioModel(imageName: BeneficioImageEnum.Combustivel.text, value: 0, description: "COMBUSTÍVEL", backgroudColor: .systemYellow),
+        BeneficioModel(imageName: BeneficioImageEnum.Viagem.text, value: 0, description: "VIAGEM", backgroudColor: .systemIndigo),
+        BeneficioModel(imageName: BeneficioImageEnum.Curso.text, value: 0, description: "CURSO", backgroudColor: .systemGray)
     ]
     
     private lazy var labelBeneficio: UILabel = {

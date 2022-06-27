@@ -40,10 +40,10 @@ class BeneficioCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public func setup(_ beneficioItem: BeneficioItem) {
-        self.viewCell.setup(imageName: beneficioItem.imageName,
-                            value: beneficioItem.value,
-                            description: beneficioItem.description,
-                            backgroudColor: beneficioItem.backgroudColor)
+    public func setup(_ model: BeneficioModel) {
+        self.viewCell.setup(imageName: model.imageName,
+                            value: model.value,
+                            description: model.description,
+                            backgroudColor: model.backgroudColor)
     }
 }
