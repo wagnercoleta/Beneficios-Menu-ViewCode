@@ -81,14 +81,6 @@ class BeneficioItemView: BaseView {
             self.stack.bottomAnchor.constraint(equalTo: self.boxView.bottomAnchor, constant: -Matrics.space)
         ])
     }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
    
     public func setup(imageName: String, value: Decimal, description: String, backgroudColor: UIColor) {
         self.imageView.image = UIImage(systemName: "\(imageName)")

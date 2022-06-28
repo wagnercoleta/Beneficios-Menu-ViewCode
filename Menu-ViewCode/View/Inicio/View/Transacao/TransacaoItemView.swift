@@ -99,14 +99,6 @@ class TransacaoItemView: BaseView {
         ])
     }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     public func setup(_ model: TransacaoModel) {
         self.imageView.image = UIImage(systemName: "\(model.imageName)")
         self.labelStore.text = model.store

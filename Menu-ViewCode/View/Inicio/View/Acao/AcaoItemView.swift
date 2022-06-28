@@ -78,15 +78,7 @@ class AcaoItemView: BaseView {
             
         ])
     }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
+   
     public func setup(imageName: String, description: String) {
         self.imageViewTransf.image = UIImage(systemName: "\(imageName)")
         self.labelTransf.text = description

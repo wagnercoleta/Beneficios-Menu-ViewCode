@@ -17,6 +17,7 @@
 		DD709DD5286A406D006627EB /* TransacaoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD709DD4286A406D006627EB /* TransacaoCollectionViewCell.swift */; };
 		DD709DD8286A40F7006627EB /* TransacaoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD709DD7286A40F6006627EB /* TransacaoModel.swift */; };
 		DD709DDA286A50FB006627EB /* BeneficioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD709DD9286A50FB006627EB /* BeneficioModel.swift */; };
+		DD745417286B2FCD00418D08 /* PerfilHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD745416286B2FCD00418D08 /* PerfilHeaderView.swift */; };
 		DDBFDF7E2864EA0200FD4451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFDF7D2864EA0200FD4451 /* AppDelegate.swift */; };
 		DDBFDF802864EA0200FD4451 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFDF7F2864EA0200FD4451 /* SceneDelegate.swift */; };
 		DDBFDF872864EA0400FD4451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBFDF862864EA0400FD4451 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		DD709DD4286A406D006627EB /* TransacaoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransacaoCollectionViewCell.swift; sourceTree = "<group>"; };
 		DD709DD7286A40F6006627EB /* TransacaoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransacaoModel.swift; sourceTree = "<group>"; };
 		DD709DD9286A50FB006627EB /* BeneficioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeneficioModel.swift; sourceTree = "<group>"; };
+		DD745416286B2FCD00418D08 /* PerfilHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilHeaderView.swift; sourceTree = "<group>"; };
 		DDBFDF7A2864EA0200FD4451 /* Menu-ViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Menu-ViewCode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBFDF7D2864EA0200FD4451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDBFDF7F2864EA0200FD4451 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,14 @@
 				DD709DD7286A40F6006627EB /* TransacaoModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DD745415286B2FAC00418D08 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				DD745416286B2FCD00418D08 /* PerfilHeaderView.swift */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		DDBFDF712864EA0200FD4451 = {
@@ -198,6 +208,7 @@
 		DDBFDF9C2865024F00FD4451 /* Perfil */ = {
 			isa = PBXGroup;
 			children = (
+				DD745415286B2FAC00418D08 /* Header */,
 				DDBFDF9D2865026000FD4451 /* PerfilViewController.swift */,
 			);
 			path = Perfil;
@@ -288,6 +299,7 @@
 				DD709DD32869FF61006627EB /* TransacaoItemView.swift in Sources */,
 				DD709DD12869E9DD006627EB /* AcaoItemView.swift in Sources */,
 				DD709DD8286A40F7006627EB /* TransacaoModel.swift in Sources */,
+				DD745417286B2FCD00418D08 /* PerfilHeaderView.swift in Sources */,
 				DDBFDFA92865075800FD4451 /* InicioScreen.swift in Sources */,
 				DDBFDF7E2864EA0200FD4451 /* AppDelegate.swift in Sources */,
 				DD6AC53A28662BF500698506 /* BeneficioItemView.swift in Sources */,

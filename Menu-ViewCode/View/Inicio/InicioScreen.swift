@@ -7,7 +7,7 @@
 
 import UIKit
 
-class InicioScreen: UIView {
+class InicioScreen: BaseView {
 
     private struct Metrics {
         static let space: CGFloat = 10.0
@@ -38,14 +38,14 @@ class InicioScreen: UIView {
         return view
     }()
 
-    private func addElemented() {
+    override func addElemented() {
         self.addSubview(self.headerView)
         self.addSubview(self.beneficioView)
         self.addSubview(self.acaoView)
         self.addSubview(self.transacaoView)
     }
     
-    private func setupConstraint() {
+    override func setupConstraint() {
         NSLayoutConstraint.activate([
             
             self.headerView.topAnchor.constraint(equalTo: self.topAnchor, constant: MatricsGlobal.margin),
@@ -68,16 +68,5 @@ class InicioScreen: UIView {
             self.transacaoView.trailingAnchor.constraint(equalTo: self.headerView.trailingAnchor),
             self.transacaoView.heightAnchor.constraint(equalToConstant: 190)
         ])
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        //self.backgroundColor = .white
-        self.addElemented()
-        self.setupConstraint()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 }
