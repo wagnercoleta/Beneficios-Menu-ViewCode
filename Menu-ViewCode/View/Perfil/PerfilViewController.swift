@@ -9,7 +9,14 @@ import UIKit
 
 class PerfilViewController: BaseViewController {
 
+    private var screen: PerfilScreen?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func loadView() {
+        self.screen = PerfilScreen()
+        self.view = self.screen
     }
 }

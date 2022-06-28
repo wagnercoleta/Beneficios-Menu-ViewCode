@@ -9,6 +9,7 @@ import UIKit
 
 struct CustomColor {
     static let Main = UIColor(named: "main")
+    static let Second = UIColor(named: "second")
 }
 
 struct CustomFont {

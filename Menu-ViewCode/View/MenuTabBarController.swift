@@ -19,7 +19,7 @@ class MenuTabBarController: UITabBarController {
         self.setViewControllers(
             [
                 InicioViewController(title: "Início", backgroundColor: .white, image: UIImage(systemName: "house.fill")),
-                PerfilViewController(title: "Perfil", backgroundColor: .red, image: UIImage(systemName: "person.fill"))
+                PerfilViewController(title: "Perfil", backgroundColor: .white, image: UIImage(systemName: "person.fill"))
             ],
             animated: false
         )
