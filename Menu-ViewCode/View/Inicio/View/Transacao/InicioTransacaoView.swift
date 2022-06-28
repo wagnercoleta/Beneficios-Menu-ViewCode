@@ -14,11 +14,12 @@ class InicioTransacaoView: BaseView {
     }
     
     private var transacoes: [TransacaoModel] = [
-        TransacaoModel(imageName: BeneficioImageEnum.Refeicao.text, store: "Restaurante da kênia", value: 19.90, data: getDate(hour: 24)),
-        TransacaoModel(imageName: BeneficioImageEnum.Refeicao.text, store: "Pizzaiolo Contagem", value: 89.99, data: getDate(hour: 26)),
-        TransacaoModel(imageName: BeneficioImageEnum.Alimentacao.text, store: "Supermercados BH", value: 375.43, data: getDate(hour: 48)),
-        TransacaoModel(imageName: BeneficioImageEnum.Combustivel.text, store: "Posto Ipiranga", value: 200.00, data: getDate(hour: 55)),
-        TransacaoModel(imageName: BeneficioImageEnum.Construcao.text, store: "Deposito Nossa construção", value: 120.50, data: getDate(hour: 74)),
+        TransacaoModel(imageName: BeneficioImageEnum.Refeicao.text, store: "Restaurante da esquina", value: 19.90, data: getDate(hour: 24)),
+        TransacaoModel(imageName: BeneficioImageEnum.Refeicao.text, store: "Pizza contagem", value: 89.99, data: getDate(hour: 26)),
+        TransacaoModel(imageName: BeneficioImageEnum.Alimentacao.text, store: "Supermercado da esquina", value: 375.43, data: getDate(hour: 48)),
+        TransacaoModel(imageName: BeneficioImageEnum.Combustivel.text, store: "Posto da esquina", value: 200.00, data: getDate(hour: 55)),
+        TransacaoModel(imageName: BeneficioImageEnum.Construcao.text, store: "Deposito nossa construção", value: 120.50, data: getDate(hour: 74)),
+        TransacaoModel(imageName: BeneficioImageEnum.Refeicao.text, store: "Restaurante da esquina", value: 25.70, data: getDate(hour: 124)),
     ]
     
     private lazy var labelTransacao: UILabel = {
