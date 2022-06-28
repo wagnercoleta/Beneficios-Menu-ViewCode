@@ -64,7 +64,7 @@ class InicioBeneficioView: BaseView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: CustomFont.SizeDefault, weight: .regular)
         label.text = "Total em benefícios"
-        label.textColor = CustomColor.Main
+        label.textColor = CustomColor.Second
         return label
     }()
     
@@ -73,7 +73,7 @@ class InicioBeneficioView: BaseView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: CustomFont.SizeDefault, weight: .bold)
         label.text = "R$ 2.500,00"
-        label.textColor = CustomColor.Main
+        label.textColor = CustomColor.Second
         return label
     }()
     

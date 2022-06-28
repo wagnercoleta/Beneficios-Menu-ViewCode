@@ -44,7 +44,7 @@ class TransacaoItemView: BaseView {
         label.font = UIFont.systemFont(ofSize: Matrics.sizeFontLabel, weight: .bold)
         label.text = "Restaurante da Doninha da silva coleta mais uma linha"
         label.lineBreakMode = .byTruncatingTail
-        label.textColor = CustomColor.Main
+        label.textColor = CustomColor.Second
         return label
     }()
     
@@ -53,7 +53,7 @@ class TransacaoItemView: BaseView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: Matrics.sizeFontLabel, weight: .bold)
         label.text = "R$ 33,25"
-        label.textColor = CustomColor.Main
+        label.textColor = CustomColor.Second
         return label
     }()
     
@@ -62,7 +62,7 @@ class TransacaoItemView: BaseView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: CustomFont.SizeDefault - 3, weight: .regular)
         label.text = "25/06/2022 - 11:41"
-        label.textColor = CustomColor.Main
+        label.textColor = CustomColor.Second
         return label
     }()
     

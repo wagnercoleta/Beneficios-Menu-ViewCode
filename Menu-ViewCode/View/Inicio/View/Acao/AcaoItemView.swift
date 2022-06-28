@@ -34,7 +34,7 @@ class AcaoItemView: BaseView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: CustomFont.SizeDefault, weight: .regular)
         label.text = "Transferir saldo entre benefícios"
-        label.textColor = CustomColor.Main
+        label.textColor = CustomColor.Second
         return label
     }()
     
@@ -42,7 +42,7 @@ class AcaoItemView: BaseView {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         image.image = UIImage(systemName: "greaterthan")
-        image.tintColor = CustomColor.Main
+        image.tintColor = CustomColor.Second
         return image
     }()
     
