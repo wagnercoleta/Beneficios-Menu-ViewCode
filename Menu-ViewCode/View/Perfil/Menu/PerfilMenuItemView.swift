@@ -13,6 +13,7 @@ class PerfilMenuItemView: BaseView {
         static let space: CGFloat = 10.0
         static let spaceImage: CGFloat = 3.5
         static let heightBoxView: CGFloat = 40
+        static let widthBoxView: CGFloat = 400
         static let imageWidthHeight: CGFloat = 30.0
         static let heightLine: CGFloat = 0.4
     }
@@ -60,6 +61,7 @@ class PerfilMenuItemView: BaseView {
             self.boxView.topAnchor.constraint(equalTo: self.topAnchor),
             self.boxView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             self.boxView.heightAnchor.constraint(equalToConstant: Matrics.heightBoxView),
+            self.boxView.widthAnchor.constraint(equalToConstant: Matrics.widthBoxView),
             
             self.imageView.leadingAnchor.constraint(equalTo: self.boxView.leadingAnchor),
             self.imageView.topAnchor.constraint(equalTo: self.boxView.topAnchor, constant: Matrics.spaceImage),

@@ -38,7 +38,7 @@ class PerfilHeaderView: BaseView {
     private lazy var labelName: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: CustomFont.SizeDefault, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: CustomFont.SizeDefault + 5.0, weight: .bold)
         label.text = "Wagner"
         label.textColor = CustomColor.Second
         return label

@@ -69,6 +69,7 @@ class BeneficioItemView: BaseView {
             self.boxView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             self.boxView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             self.boxView.heightAnchor.constraint(equalToConstant: 200),
+            self.boxView.widthAnchor.constraint(equalToConstant: 150),
             
             self.imageView.topAnchor.constraint(equalTo: self.boxView.topAnchor, constant: Matrics.space),
             self.imageView.leadingAnchor.constraint(equalTo: self.boxView.leadingAnchor, constant: Matrics.space),
