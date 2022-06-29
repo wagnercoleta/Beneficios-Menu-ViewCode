@@ -11,14 +11,15 @@ class InicioHeaderView: BaseView {
 
     private struct Matrics {
         static let labelFontSize: CGFloat = 25.0
+        static let heightBoxView: CGFloat = 40
+        static let heightWidthImageView: CGFloat = 30.0
+        static let space: CGFloat = 10.0
     }
     
-    private lazy var stack: UIStackView = {
-        let stack = UIStackView()
-        stack.translatesAutoresizingMaskIntoConstraints = false
-        stack.axis = .horizontal
-        stack.distribution = .equalSpacing
-        return stack
+    private lazy var boxView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
     }()
     
     private lazy var labelName: UILabel = {
@@ -57,21 +58,27 @@ class InicioHeaderView: BaseView {
     }
     
     override func addElemented() {
-        stack.addArrangedSubview(labelName)
-        stack.addArrangedSubview(imageView)
-        addSubview(stack)
+        addSubview(self.boxView)
+        self.boxView.addSubview(self.labelName)
+        self.boxView.addSubview(self.imageView)
     }
     
     override func setupConstraint() {
         NSLayoutConstraint.activate([
             
-            self.imageView.widthAnchor.constraint(equalToConstant: Matrics.labelFontSize + 15),
-            self.imageView.heightAnchor.constraint(equalToConstant: Matrics.labelFontSize - 10),
+            self.boxView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            self.boxView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
+            self.boxView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            self.boxView.heightAnchor.constraint(equalToConstant: Matrics.heightBoxView),
             
-            self.stack.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
-            self.stack.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            self.stack.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            self.stack.heightAnchor.constraint(equalToConstant: Matrics.labelFontSize + 5)
+            self.labelName.leadingAnchor.constraint(equalTo: self.boxView.leadingAnchor),
+            self.labelName.centerYAnchor.constraint(equalTo: self.boxView.centerYAnchor),
+            self.labelName.trailingAnchor.constraint(equalTo: self.imageView.leadingAnchor, constant: Matrics.space),
+            
+            self.imageView.trailingAnchor.constraint(equalTo: self.boxView.trailingAnchor),
+            self.imageView.centerYAnchor.constraint(equalTo: self.boxView.centerYAnchor),
+            self.imageView.widthAnchor.constraint(equalToConstant: Matrics.heightWidthImageView),
+            self.imageView.heightAnchor.constraint(equalToConstant: Matrics.heightWidthImageView),
             
         ])
     }
