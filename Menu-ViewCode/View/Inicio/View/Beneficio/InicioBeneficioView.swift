@@ -15,14 +15,14 @@ class InicioBeneficioView: BaseView {
     }
     
     private var beneficios: [BeneficioModel] = [
-        BeneficioModel(imageName: BeneficioImageEnum.Refeicao.text, value: 500, description: "REFEIÇÃO", backgroudColor: .systemRed),
-        BeneficioModel(imageName: BeneficioImageEnum.Alimentacao.text, value: 1200, description: "ALIMENTAÇÃO", backgroudColor: .systemGreen),
-        BeneficioModel(imageName: BeneficioImageEnum.HomeOffice.text, value: 100.40, description: "HOME-OFFICE", backgroudColor: .systemBlue),
-        BeneficioModel(imageName: BeneficioImageEnum.Construcao.text, value: 300, description: "CONSTRUÇÃO", backgroudColor: .systemPurple),
-        BeneficioModel(imageName: BeneficioImageEnum.Credito.text, value: 0, description: "CRÉDITO", backgroudColor: .systemTeal),
-        BeneficioModel(imageName: BeneficioImageEnum.Combustivel.text, value: 0, description: "COMBUSTÍVEL", backgroudColor: .systemYellow),
-        BeneficioModel(imageName: BeneficioImageEnum.Viagem.text, value: 0, description: "VIAGEM", backgroudColor: .systemIndigo),
-        BeneficioModel(imageName: BeneficioImageEnum.Curso.text, value: 0, description: "CURSO", backgroudColor: .systemGray)
+        BeneficioModel(imageName: BeneficioImageEnum.Refeicao.imageName, value: 500, description: "REFEIÇÃO", backgroudColor: .systemRed),
+        BeneficioModel(imageName: BeneficioImageEnum.Alimentacao.imageName, value: 1200, description: "ALIMENTAÇÃO", backgroudColor: .systemGreen),
+        BeneficioModel(imageName: BeneficioImageEnum.HomeOffice.imageName, value: 100.40, description: "HOME-OFFICE", backgroudColor: .systemBlue),
+        BeneficioModel(imageName: BeneficioImageEnum.Construcao.imageName, value: 300, description: "CONSTRUÇÃO", backgroudColor: .systemPurple),
+        BeneficioModel(imageName: BeneficioImageEnum.Credito.imageName, value: 0, description: "CRÉDITO", backgroudColor: .systemTeal),
+        BeneficioModel(imageName: BeneficioImageEnum.Combustivel.imageName, value: 0, description: "COMBUSTÍVEL", backgroudColor: .systemYellow),
+        BeneficioModel(imageName: BeneficioImageEnum.Viagem.imageName, value: 0, description: "VIAGEM", backgroudColor: .systemIndigo),
+        BeneficioModel(imageName: BeneficioImageEnum.Curso.imageName, value: 0, description: "CURSO", backgroudColor: .systemGray)
     ]
     
     private lazy var labelBeneficio: UILabel = {

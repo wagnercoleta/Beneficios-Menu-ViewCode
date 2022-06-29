@@ -12,6 +12,7 @@ class PerfilScreen: BaseView {
     private struct Matrics {
         static let heightHeader: CGFloat = 190.0
         static let space: CGFloat = 30.0
+        static let heightCollectionView: CGFloat = 450.0
     }
     
     private var menus: [MenuModel] = [
@@ -63,7 +64,7 @@ class PerfilScreen: BaseView {
             self.collectionView.topAnchor.constraint(equalTo: self.headerView.bottomAnchor, constant: Matrics.space),
             self.collectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: Matrics.space),
             self.collectionView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -Matrics.space),
-            self.collectionView.heightAnchor.constraint(equalToConstant: 450),
+            self.collectionView.heightAnchor.constraint(equalToConstant: Matrics.heightCollectionView),
             
         ])
     }

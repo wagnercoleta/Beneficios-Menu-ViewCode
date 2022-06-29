@@ -13,6 +13,8 @@ class AcaoItemView: BaseView {
         static let space: CGFloat = 10.0
         static let heightBoxViewAcao: CGFloat = 40
         static let heightImageAcao: CGFloat = 40
+        static let heightImageViewArrow: CGFloat = 25
+        static let widthImageViewArrow: CGFloat = 15
     }
     
     private lazy var boxView: UIView = {
@@ -73,8 +75,8 @@ class AcaoItemView: BaseView {
             
             self.imageViewArrowTransf.trailingAnchor.constraint(equalTo: self.boxView.trailingAnchor),
             self.imageViewArrowTransf.centerYAnchor.constraint(equalTo: self.boxView.centerYAnchor),
-            self.imageViewArrowTransf.widthAnchor.constraint(equalToConstant: 15),
-            self.imageViewArrowTransf.heightAnchor.constraint(equalToConstant: 25),
+            self.imageViewArrowTransf.widthAnchor.constraint(equalToConstant: Matrics.widthImageViewArrow),
+            self.imageViewArrowTransf.heightAnchor.constraint(equalToConstant: Matrics.heightImageViewArrow),
             
         ])
     }

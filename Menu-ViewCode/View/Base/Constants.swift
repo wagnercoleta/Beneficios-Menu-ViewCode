@@ -31,7 +31,7 @@ enum BeneficioImageEnum: String {
     case Viagem
     case Curso
     
-    var text: String {
+    var imageName: String {
         switch self {
             case .Refeicao:
                 return "smiley"

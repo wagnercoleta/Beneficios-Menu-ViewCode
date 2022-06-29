@@ -9,8 +9,12 @@ import UIKit
 
 class InicioScreen: BaseView {
 
-    private struct Metrics {
+    private struct Matrics {
         static let space: CGFloat = 10.0
+        static let heightHeader: CGFloat = 50.0
+        static let heightBeneficioView: CGFloat = 275.0
+        static let heightAcaoView: CGFloat = 160.0
+        static let heightTransacaoView: CGFloat = 190.0
     }
     
     private lazy var headerView: InicioHeaderView = {
@@ -34,7 +38,6 @@ class InicioScreen: BaseView {
     private lazy var transacaoView: InicioTransacaoView = {
         let view = InicioTransacaoView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        //view.backgroundColor = .lightGray
         return view
     }()
 
@@ -51,22 +54,22 @@ class InicioScreen: BaseView {
             self.headerView.topAnchor.constraint(equalTo: self.topAnchor, constant: MatricsGlobal.margin),
             self.headerView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: MatricsGlobal.margin),
             self.headerView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -MatricsGlobal.margin),
-            self.headerView.heightAnchor.constraint(equalToConstant: 50),
+            self.headerView.heightAnchor.constraint(equalToConstant: Matrics.heightHeader),
             
-            self.beneficioView.topAnchor.constraint(equalTo: self.headerView.bottomAnchor, constant: Metrics.space * 2),
+            self.beneficioView.topAnchor.constraint(equalTo: self.headerView.bottomAnchor, constant: Matrics.space * 2),
             self.beneficioView.leadingAnchor.constraint(equalTo: self.headerView.leadingAnchor),
             self.beneficioView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            self.beneficioView.heightAnchor.constraint(equalToConstant: 275),
+            self.beneficioView.heightAnchor.constraint(equalToConstant: Matrics.heightBeneficioView),
             
-            self.acaoView.topAnchor.constraint(equalTo: self.beneficioView.bottomAnchor, constant: Metrics.space * 2),
+            self.acaoView.topAnchor.constraint(equalTo: self.beneficioView.bottomAnchor, constant: Matrics.space * 2),
             self.acaoView.leadingAnchor.constraint(equalTo: self.headerView.leadingAnchor),
             self.acaoView.trailingAnchor.constraint(equalTo: self.headerView.trailingAnchor),
-            self.acaoView.heightAnchor.constraint(equalToConstant: 160),
+            self.acaoView.heightAnchor.constraint(equalToConstant: Matrics.heightAcaoView),
             
-            self.transacaoView.topAnchor.constraint(equalTo: self.acaoView.bottomAnchor, constant: Metrics.space * 2),
+            self.transacaoView.topAnchor.constraint(equalTo: self.acaoView.bottomAnchor, constant: Matrics.space * 2),
             self.transacaoView.leadingAnchor.constraint(equalTo: self.headerView.leadingAnchor),
             self.transacaoView.trailingAnchor.constraint(equalTo: self.headerView.trailingAnchor),
-            self.transacaoView.heightAnchor.constraint(equalToConstant: 190)
+            self.transacaoView.heightAnchor.constraint(equalToConstant: Matrics.heightTransacaoView)
         ])
     }
 }

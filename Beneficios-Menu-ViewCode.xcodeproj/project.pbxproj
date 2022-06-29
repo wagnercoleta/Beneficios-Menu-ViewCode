@@ -53,7 +53,7 @@
 		DD74541B286B3DF900418D08 /* PerfilMenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilMenuItemView.swift; sourceTree = "<group>"; };
 		DD77F394286B78D10038BA39 /* PerfilMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilMenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		DD77F396286B79C60038BA39 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
-		DDBFDF7A2864EA0200FD4451 /* Menu-ViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Menu-ViewCode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDBFDF7A2864EA0200FD4451 /* Beneficios-Menu-ViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beneficios-Menu-ViewCode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBFDF7D2864EA0200FD4451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDBFDF7F2864EA0200FD4451 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DDBFDF862864EA0400FD4451 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 		DDBFDF7B2864EA0200FD4451 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DDBFDF7A2864EA0200FD4451 /* Menu-ViewCode.app */,
+				DDBFDF7A2864EA0200FD4451 /* Beneficios-Menu-ViewCode.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -248,9 +248,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DDBFDF792864EA0200FD4451 /* Menu-ViewCode */ = {
+		DDBFDF792864EA0200FD4451 /* Beneficios-Menu-ViewCode */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DDBFDF8E2864EA0400FD4451 /* Build configuration list for PBXNativeTarget "Menu-ViewCode" */;
+			buildConfigurationList = DDBFDF8E2864EA0400FD4451 /* Build configuration list for PBXNativeTarget "Beneficios-Menu-ViewCode" */;
 			buildPhases = (
 				DDBFDF762864EA0200FD4451 /* Sources */,
 				DDBFDF772864EA0200FD4451 /* Frameworks */,
@@ -260,9 +260,9 @@
 			);
 			dependencies = (
 			);
-			name = "Menu-ViewCode";
+			name = "Beneficios-Menu-ViewCode";
 			productName = "Menu-ViewCode";
-			productReference = DDBFDF7A2864EA0200FD4451 /* Menu-ViewCode.app */;
+			productReference = DDBFDF7A2864EA0200FD4451 /* Beneficios-Menu-ViewCode.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -279,7 +279,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DDBFDF752864EA0200FD4451 /* Build configuration list for PBXProject "Menu-ViewCode" */;
+			buildConfigurationList = DDBFDF752864EA0200FD4451 /* Build configuration list for PBXProject "Beneficios-Menu-ViewCode" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -292,7 +292,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DDBFDF792864EA0200FD4451 /* Menu-ViewCode */,
+				DDBFDF792864EA0200FD4451 /* Beneficios-Menu-ViewCode */,
 			);
 		};
 /* End PBXProject section */
@@ -514,7 +514,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DDBFDF752864EA0200FD4451 /* Build configuration list for PBXProject "Menu-ViewCode" */ = {
+		DDBFDF752864EA0200FD4451 /* Build configuration list for PBXProject "Beneficios-Menu-ViewCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DDBFDF8C2864EA0400FD4451 /* Debug */,
@@ -523,7 +523,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDBFDF8E2864EA0400FD4451 /* Build configuration list for PBXNativeTarget "Menu-ViewCode" */ = {
+		DDBFDF8E2864EA0400FD4451 /* Build configuration list for PBXNativeTarget "Beneficios-Menu-ViewCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DDBFDF8F2864EA0400FD4451 /* Debug */,

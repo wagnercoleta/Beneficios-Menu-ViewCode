@@ -11,6 +11,9 @@ class BeneficioItemView: BaseView {
     
     private struct Matrics {
         static let space: CGFloat = 25.0
+        static let heightBoxView: CGFloat = 200
+        static let widthBoxView: CGFloat = 150
+        static let heightWidthImageView: CGFloat = 45
     }
     
     private lazy var boxView: UIView = {
@@ -68,13 +71,13 @@ class BeneficioItemView: BaseView {
             self.boxView.topAnchor.constraint(equalTo: self.topAnchor),
             self.boxView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             self.boxView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            self.boxView.heightAnchor.constraint(equalToConstant: 200),
-            self.boxView.widthAnchor.constraint(equalToConstant: 150),
+            self.boxView.heightAnchor.constraint(equalToConstant: Matrics.heightBoxView),
+            self.boxView.widthAnchor.constraint(equalToConstant: Matrics.widthBoxView),
             
             self.imageView.topAnchor.constraint(equalTo: self.boxView.topAnchor, constant: Matrics.space),
             self.imageView.leadingAnchor.constraint(equalTo: self.boxView.leadingAnchor, constant: Matrics.space),
-            self.imageView.widthAnchor.constraint(equalToConstant: 45),
-            self.imageView.heightAnchor.constraint(equalToConstant: 45),
+            self.imageView.widthAnchor.constraint(equalToConstant: Matrics.heightWidthImageView),
+            self.imageView.heightAnchor.constraint(equalToConstant: Matrics.heightWidthImageView),
             
             self.stack.topAnchor.constraint(equalTo: self.imageView.bottomAnchor),
             self.stack.leadingAnchor.constraint(equalTo: self.imageView.leadingAnchor),

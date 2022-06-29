@@ -13,10 +13,10 @@ class BaseViewController: UIViewController {
     var backgroundColorView: UIColor
     var imageView: UIImage?
     
-    init(title: String, backgroundColor: UIColor, image: UIImage?){
+    init(title: String, image: UIImage?, backgroundColor: UIColor? = nil){
         self.titleView = title
-        self.backgroundColorView = backgroundColor
         self.imageView = image
+        self.backgroundColorView = backgroundColor ?? .white
         super.init(nibName: nil, bundle: nil)
     }
     

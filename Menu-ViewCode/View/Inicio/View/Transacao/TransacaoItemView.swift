@@ -42,7 +42,7 @@ class TransacaoItemView: BaseView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: Matrics.sizeFontLabel, weight: .bold)
-        label.text = "Restaurante da Doninha da silva coleta mais uma linha"
+        label.text = "Restaurante da Doninha"
         label.lineBreakMode = .byTruncatingTail
         label.textColor = CustomColor.Second
         return label
