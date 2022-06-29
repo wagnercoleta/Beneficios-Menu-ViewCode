@@ -26,7 +26,7 @@ class InicioHeaderView: BaseView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.attributedText = self.getAttributedTextName(textWellcome: "Oi", textName: "Wagner")
-        label.numberOfLines = 1
+        label.numberOfLines = 2
         label.textColor = CustomColor.Second
         return label
     }()
