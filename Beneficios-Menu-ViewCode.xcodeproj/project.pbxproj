@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A616AAB8CEE0F5D99E290289 /* Pods_Beneficios_Menu_ViewCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639E16BA6FA331EB7E603F71 /* Pods_Beneficios_Menu_ViewCode.framework */; };
 		DD6AC5322866071800698506 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6AC5312866071800698506 /* Constants.swift */; };
 		DD6AC53428660DC700698506 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6AC53328660DC700698506 /* BaseView.swift */; };
 		DD6AC53A28662BF500698506 /* BeneficioItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6AC53928662BF500698506 /* BeneficioItemView.swift */; };
@@ -39,6 +40,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		639E16BA6FA331EB7E603F71 /* Pods_Beneficios_Menu_ViewCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beneficios_Menu_ViewCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77B8AABB568A0F59A94B0E84 /* Pods-Beneficios-Menu-ViewCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beneficios-Menu-ViewCode.debug.xcconfig"; path = "Target Support Files/Pods-Beneficios-Menu-ViewCode/Pods-Beneficios-Menu-ViewCode.debug.xcconfig"; sourceTree = "<group>"; };
+		B849CBB633440DC1DA51CC91 /* Pods-Beneficios-Menu-ViewCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beneficios-Menu-ViewCode.release.xcconfig"; path = "Target Support Files/Pods-Beneficios-Menu-ViewCode/Pods-Beneficios-Menu-ViewCode.release.xcconfig"; sourceTree = "<group>"; };
 		DD6AC5312866071800698506 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DD6AC53328660DC700698506 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		DD6AC53928662BF500698506 /* BeneficioItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeneficioItemView.swift; sourceTree = "<group>"; };
@@ -77,12 +81,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A616AAB8CEE0F5D99E290289 /* Pods_Beneficios_Menu_ViewCode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		794C25F85C90DC0CD3366A39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				639E16BA6FA331EB7E603F71 /* Pods_Beneficios_Menu_ViewCode.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C95AABBFC4EB2B280E7212D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77B8AABB568A0F59A94B0E84 /* Pods-Beneficios-Menu-ViewCode.debug.xcconfig */,
+				B849CBB633440DC1DA51CC91 /* Pods-Beneficios-Menu-ViewCode.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DD6AC53528662B5900698506 /* Header */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +176,8 @@
 				DDC427D0286C8EAB00E9BB49 /* README.md */,
 				DDBFDF7C2864EA0200FD4451 /* Menu-ViewCode */,
 				DDBFDF7B2864EA0200FD4451 /* Products */,
+				C95AABBFC4EB2B280E7212D8 /* Pods */,
+				794C25F85C90DC0CD3366A39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -255,9 +280,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDBFDF8E2864EA0400FD4451 /* Build configuration list for PBXNativeTarget "Beneficios-Menu-ViewCode" */;
 			buildPhases = (
+				7A4203D1BE39ABE1C0928E66 /* [CP] Check Pods Manifest.lock */,
 				DDBFDF762864EA0200FD4451 /* Sources */,
 				DDBFDF772864EA0200FD4451 /* Frameworks */,
 				DDBFDF782864EA0200FD4451 /* Resources */,
+				4A499B78090F9015A502D288 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -312,6 +339,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A499B78090F9015A502D288 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beneficios-Menu-ViewCode/Pods-Beneficios-Menu-ViewCode-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beneficios-Menu-ViewCode/Pods-Beneficios-Menu-ViewCode-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Beneficios-Menu-ViewCode/Pods-Beneficios-Menu-ViewCode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A4203D1BE39ABE1C0928E66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Beneficios-Menu-ViewCode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DDBFDF762864EA0200FD4451 /* Sources */ = {
@@ -479,6 +548,7 @@
 		};
 		DDBFDF8F2864EA0400FD4451 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77B8AABB568A0F59A94B0E84 /* Pods-Beneficios-Menu-ViewCode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -498,6 +568,7 @@
 		};
 		DDBFDF902864EA0400FD4451 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B849CBB633440DC1DA51CC91 /* Pods-Beneficios-Menu-ViewCode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
