@@ -14,7 +14,7 @@ class AcaoItemView: BaseView {
         static let space: CGFloat = 10.0
         static let heightBoxViewAcao: CGFloat = 40
         static let heightImageAcao: CGFloat = 40
-        static let widthImageAcao: CGFloat = 36
+        static let widthImageAcao: CGFloat = 40
         static let heightImageViewArrow: CGFloat = 25
         static let widthImageViewArrow: CGFloat = 15
     }
