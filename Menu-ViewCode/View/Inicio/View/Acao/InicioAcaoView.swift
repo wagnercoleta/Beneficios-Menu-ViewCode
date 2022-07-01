@@ -58,33 +58,66 @@ class InicioAcaoView: BaseView {
         addSubview(self.lineViewPay)
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        self.labelAcao.pin
+            .top(to: self.edge.top)
+            .left(to: self.edge.left)
+            .right(to: self.edge.right)
+        
+        self.viewAcaoTransf.pin
+            .top(to: self.labelAcao.edge.bottom).marginTop(Matrics.space)
+            .left(to: self.edge.left)
+            .right(to: self.edge.right)
+            .height(Matrics.heightAcaoView)
+        
+        self.lineViewTransf.pin
+            .left(to: self.edge.left)
+            .top(to: self.viewAcaoTransf.edge.bottom).marginTop(Matrics.space / 2)
+            .right(to: self.edge.right)
+            .height(Matrics.heightLine)
+        
+        self.viewAcaoPay.pin
+            .top(to: self.lineViewTransf.edge.bottom).marginTop(Matrics.space / 2)
+            .left(to: self.edge.left)
+            .right(to: self.edge.right)
+            .height(Matrics.heightAcaoView)
+        
+        self.lineViewPay.pin
+            .left(to: self.edge.left)
+            .top(to: self.viewAcaoPay.edge.bottom).marginTop(Matrics.space / 2)
+            .right(to: self.edge.right)
+            .height(Matrics.heightLine)
+    }
+    
     override func setupConstraint() {
-        NSLayoutConstraint.activate([
-            
-            self.labelAcao.topAnchor.constraint(equalTo: self.topAnchor),
-            self.labelAcao.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            self.labelAcao.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            
-            self.viewAcaoTransf.topAnchor.constraint(equalTo: self.labelAcao.bottomAnchor, constant: Matrics.space ),
-            self.viewAcaoTransf.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            self.viewAcaoTransf.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            self.viewAcaoTransf.heightAnchor.constraint(equalToConstant: Matrics.heightAcaoView),
-            
-            self.lineViewTransf.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            self.lineViewTransf.topAnchor.constraint(equalTo: self.viewAcaoTransf.bottomAnchor, constant: Matrics.space / 2),
-            self.lineViewTransf.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            self.lineViewTransf.heightAnchor.constraint(equalToConstant: Matrics.heightLine),
-            
-            self.viewAcaoPay.topAnchor.constraint(equalTo: self.lineViewTransf.bottomAnchor, constant: Matrics.space / 2),
-            self.viewAcaoPay.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            self.viewAcaoPay.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            self.viewAcaoPay.heightAnchor.constraint(equalToConstant: Matrics.heightAcaoView),
-            
-            self.lineViewPay.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            self.lineViewPay.topAnchor.constraint(equalTo: self.viewAcaoPay.bottomAnchor, constant: Matrics.space / 2),
-            self.lineViewPay.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            self.lineViewPay.heightAnchor.constraint(equalToConstant: Matrics.heightLine),
-        ])
+//        NSLayoutConstraint.activate([
+//
+//            self.labelAcao.topAnchor.constraint(equalTo: self.topAnchor),
+//            self.labelAcao.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+//            self.labelAcao.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+//
+//            self.viewAcaoTransf.topAnchor.constraint(equalTo: self.labelAcao.bottomAnchor, constant: Matrics.space ),
+//            self.viewAcaoTransf.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+//            self.viewAcaoTransf.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+//            self.viewAcaoTransf.heightAnchor.constraint(equalToConstant: Matrics.heightAcaoView),
+//
+//            self.lineViewTransf.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+//            self.lineViewTransf.topAnchor.constraint(equalTo: self.viewAcaoTransf.bottomAnchor, constant: Matrics.space / 2),
+//            self.lineViewTransf.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+//            self.lineViewTransf.heightAnchor.constraint(equalToConstant: Matrics.heightLine),
+//
+//            self.viewAcaoPay.topAnchor.constraint(equalTo: self.lineViewTransf.bottomAnchor, constant: Matrics.space / 2),
+//            self.viewAcaoPay.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+//            self.viewAcaoPay.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+//            self.viewAcaoPay.heightAnchor.constraint(equalToConstant: Matrics.heightAcaoView),
+//
+//            self.lineViewPay.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+//            self.lineViewPay.topAnchor.constraint(equalTo: self.viewAcaoPay.bottomAnchor, constant: Matrics.space / 2),
+//            self.lineViewPay.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+//            self.lineViewPay.heightAnchor.constraint(equalToConstant: Matrics.heightLine),
+//        ])
     }
     
     override init(frame: CGRect) {
