@@ -6,13 +6,15 @@
 //
 
 import UIKit
+import PinLayout
 
 class InicioHeaderView: BaseView {
 
     private struct Matrics {
         static let labelFontSize: CGFloat = 25.0
         static let heightBoxView: CGFloat = 40
-        static let heightWidthImageView: CGFloat = 30.0
+        static let heightImageView: CGFloat = 25.0
+        static let widthImageView: CGFloat = 40.0
         static let space: CGFloat = 10.0
     }
     
@@ -26,7 +28,7 @@ class InicioHeaderView: BaseView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.attributedText = self.getAttributedTextName(textWellcome: "Oi", textName: "Wagner")
-        label.numberOfLines = 2
+        label.lineBreakMode = .byTruncatingTail
         label.textColor = CustomColor.Second
         return label
     }()
@@ -35,6 +37,7 @@ class InicioHeaderView: BaseView {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         image.image = UIImage(systemName: "eye")
+        image.contentMode = .scaleAspectFill
         return image
     }()
 
@@ -59,27 +62,49 @@ class InicioHeaderView: BaseView {
     
     override func addElemented() {
         addSubview(self.boxView)
-        self.boxView.addSubview(self.labelName)
-        self.boxView.addSubview(self.imageView)
+        addSubview(self.labelName)
+        addSubview(self.imageView)
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        self.boxView.pin
+            .top(pin.safeArea)
+            .horizontally(pin.safeArea)
+            .height(Matrics.heightBoxView)
+        
+        self.imageView.pin
+            .centerRight(to: self.boxView.anchor.centerRight)
+            .width(Matrics.widthImageView)
+            .height(Matrics.heightImageView)
+            .sizeToFit(.width)
+        
+        self.labelName.pin
+            .centerLeft(to: self.boxView.anchor.centerStart)
+            .left(to: self.boxView.edge.left)
+            .right(to: self.imageView.edge.left)
+            .sizeToFit(.width)
     }
     
     override func setupConstraint() {
-        NSLayoutConstraint.activate([
-            
-            self.boxView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            self.boxView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
-            self.boxView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            self.boxView.heightAnchor.constraint(equalToConstant: Matrics.heightBoxView),
-            
-            self.labelName.leadingAnchor.constraint(equalTo: self.boxView.leadingAnchor),
-            self.labelName.centerYAnchor.constraint(equalTo: self.boxView.centerYAnchor),
-            self.labelName.trailingAnchor.constraint(equalTo: self.imageView.leadingAnchor, constant: Matrics.space),
-            
-            self.imageView.trailingAnchor.constraint(equalTo: self.boxView.trailingAnchor),
-            self.imageView.centerYAnchor.constraint(equalTo: self.boxView.centerYAnchor),
-            self.imageView.widthAnchor.constraint(equalToConstant: Matrics.heightWidthImageView),
-            self.imageView.heightAnchor.constraint(equalToConstant: Matrics.heightWidthImageView),
-            
-        ])
+        
+//        NSLayoutConstraint.activate([
+//
+//            self.boxView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+//            self.boxView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
+//            self.boxView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+//            self.boxView.heightAnchor.constraint(equalToConstant: Matrics.heightBoxView),
+//
+//            self.labelName.leadingAnchor.constraint(equalTo: self.boxView.leadingAnchor),
+//            self.labelName.centerYAnchor.constraint(equalTo: self.boxView.centerYAnchor),
+//            self.labelName.trailingAnchor.constraint(equalTo: self.imageView.leadingAnchor, constant: Matrics.space),
+//
+//            self.imageView.trailingAnchor.constraint(equalTo: self.boxView.trailingAnchor),
+//            self.imageView.centerYAnchor.constraint(equalTo: self.boxView.centerYAnchor),
+//            self.imageView.widthAnchor.constraint(equalToConstant: Matrics.heightWidthImageView),
+//            self.imageView.heightAnchor.constraint(equalToConstant: Matrics.heightWidthImageView),
+//
+//        ])
     }
 }

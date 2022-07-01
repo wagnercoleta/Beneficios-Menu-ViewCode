@@ -7,6 +7,6 @@ target 'Beneficios-Menu-ViewCode' do
 
   # Pods for Beneficios-Menu-ViewCode
 
-  pod 'PinLayout'
+  pod 'PinLayout', '1.9.3'
 
 end

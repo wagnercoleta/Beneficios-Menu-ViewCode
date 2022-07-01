@@ -43,7 +43,6 @@ class TransacaoItemView: BaseView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: Matrics.sizeFontLabel, weight: .bold)
         label.text = "Restaurante da Doninha"
-        label.lineBreakMode = .byTruncatingTail
         label.textColor = CustomColor.Second
         return label
     }()
@@ -82,7 +81,8 @@ class TransacaoItemView: BaseView {
             self.boxView.topAnchor.constraint(equalTo: self.topAnchor),
             self.boxView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             self.boxView.heightAnchor.constraint(equalToConstant: Matrics.heightBoxView),
-
+            self.boxView.widthAnchor.constraint(equalToConstant: 365),
+            
             self.imageView.leadingAnchor.constraint(equalTo: self.boxView.leadingAnchor),
             self.imageView.centerYAnchor.constraint(equalTo: self.boxView.centerYAnchor),
             self.imageView.widthAnchor.constraint(equalToConstant: Matrics.heightImage),
