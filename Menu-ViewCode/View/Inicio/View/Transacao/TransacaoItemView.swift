@@ -12,6 +12,7 @@ class TransacaoItemView: BaseView {
     private struct Matrics {
         static let space: CGFloat = 10.0
         static let heightBoxView: CGFloat = 40
+        static let widthBoxView: CGFloat = 365
         static let heightImage: CGFloat = 25
         static let sizeFontLabel: CGFloat = CustomFont.SizeDefault + 3
     }
@@ -82,6 +83,7 @@ class TransacaoItemView: BaseView {
             self.boxView.topAnchor.constraint(equalTo: self.topAnchor),
             self.boxView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             self.boxView.heightAnchor.constraint(equalToConstant: Matrics.heightBoxView),
+            self.boxView.widthAnchor.constraint(equalToConstant: Matrics.widthBoxView),
 
             self.imageView.leadingAnchor.constraint(equalTo: self.boxView.leadingAnchor),
             self.imageView.centerYAnchor.constraint(equalTo: self.boxView.centerYAnchor),
